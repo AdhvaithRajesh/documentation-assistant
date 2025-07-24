@@ -26,7 +26,7 @@ Follow these steps to get your Documentation Helper Bot up and running locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone <repository-url>
 cd documentation-helper-bot
 ```
 
@@ -34,9 +34,11 @@ cd documentation-helper-bot
 
 Create a `.env` file in the root directory of your project with the following content:
 
-- **`GEMINI_API_KEY`**: Obtain this from the Google AI Studio.
-- **`PINECONE_API_KEY`**: Get this from your Pinecone dashboard.
-- **`PINECONE_ENVIRONMENT`**: Find this in your Pinecone dashboard under API Keys.
+- **`GEMINI_API_KEY`**: Obtain this from the [Google AI Studio](https://aistudio.google.com/apikey).
+- **`PINECONE_API_KEY`**: Get this from your [Pinecone dashboard](https://pinecone.io).
+- **`OPENAI_API_KEY`**: Get this from the [OpenAI Platform](https://platform.openai.com/api-keys)
+
+This project can be done for free without using OpenAI credits, but I had to purchase them because I ran out of tokens for Microsoft's multilingual-e5-large embedding model.
 
 ### 3. Install Dependencies
 
@@ -48,8 +50,6 @@ pipenv install
 ```
 
 ### 4. Prepare Langchain Documentation
-
-This project assumes you have a local copy of the Langchain Python API documentation.
 
 - **Download the documentation:** You'll need to download the HTML documentation for `api.python.langchain.com/en/latest/`. You can use tools like `wget` or `httrack` to mirror the website.
 - **Place the documentation:** Ensure the downloaded documentation is located in a directory named `langchain-docs/api.python.langchain.com/en/latest/` relative to your project's root. The `ingestion.py` script specifically looks for this path.
