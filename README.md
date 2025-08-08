@@ -60,7 +60,7 @@ documentation-helper-bot/
 ├── backend/<br>
 │ ├── core.py<br>
 ├── langchain-docs/<br>
-│ └── [api.python.langchain.com/](https://api.python.langchain.com/)v
+│ └── [api.python.langchain.com/](https://api.python.langchain.com/)
 │ └── en/<br>
 │ └── latest/<br>
 │ ├── index.html<br>
