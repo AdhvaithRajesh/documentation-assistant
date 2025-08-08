@@ -57,20 +57,20 @@ pipenv install
 Your directory structure should look something like this:
 
 documentation-helper-bot/
-├── backend/
-│ ├── core.py
-├── langchain-docs/
-│ └── [api.python.langchain.com/](https://api.python.langchain.com/)
-│ └── en/
-│ └── latest/
-│ ├── index.html
-│ └── ... (other doc files)
-├── .env
-├── main.py
-├── ingestion.py
-├── Pipfile
-├── Pipfile.lock
-└── README.md
+├── backend/<br>
+│ ├── core.py<br>
+├── langchain-docs/<br>
+│ └── [api.python.langchain.com/](https://api.python.langchain.com/)v
+│ └── en/<br>
+│ └── latest/<br>
+│ ├── index.html<br>
+│ └── ... (other doc files)<br>
+├── .env<br>
+├── main.py<br>
+├── ingestion.py<br>
+├── Pipfile<br>
+├── Pipfile.lock<br>
+└── README.md<br>
 
 ### 5. Ingest Documentation into Pinecone
 
